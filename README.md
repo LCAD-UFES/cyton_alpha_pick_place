@@ -6,7 +6,7 @@ to gripper configuration see config/cyton_grasp_data.yaml (more information: htt
 
 Packages required:
 
-*Moveit
+- Moveit
 ```
   $ sudo apt-get install ros-hydro-moveit-full
   $ sudo apt-get install ros-hydro-moveit-core
