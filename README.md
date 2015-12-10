@@ -43,8 +43,8 @@ Run the following instead:
 
 ``` bash
 roslaunch cyton_alpha_moveit_config demo.launch
-roslaunch rosbook_arm_pick_and_place grasp_generator_server.launch
-rosrun rosbook_arm_pick_and_place pick_and_place.py
+roslaunch cyton_alpha_pick_place grasp_generator_server.launch
+rosrun cyton_alpha_pick_place pick_lego.py
 ```
 
 ## Simulation mode
