@@ -41,7 +41,7 @@ catkin_make -j4
 
 ## Demo mode
 
-Run the following instead:
+Run the following:
 
 ``` bash
 roslaunch cyton_alpha_moveit_config demo.launch
