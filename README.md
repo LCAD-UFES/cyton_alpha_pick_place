@@ -30,12 +30,12 @@ Clone this repository into a catkin workspace, then use the rosdep install tool 
 ```bash
 cd ~/catkin_ws/src
 git clone https://github.com/davetcoleman/moveit_simple_grasps.git -b hydro-devel
-
+cd ..
 source /opt/ros/$(rosversion -d)/setup.bash
 rosdep install --from-paths src -iy
 source devel/setup.bash 
 rosdep install --from-paths src --ignore-src --rosdistro hydro
-catkin_make -j4
+catkin_make
 ```
 
 
