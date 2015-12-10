@@ -164,8 +164,6 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-add_executable(block_pick_place src/block_pick_place.cpp)
-target_link_libraries(block_pick_place ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 
 add_executable(planning_goal src/planning_goal.cpp)
 target_link_libraries(planning_goal ${catkin_LIBRARIES} ${Boost_LIBRARIES})

@@ -47,8 +47,9 @@ class PigeonPickAndPlace:
         # Create (debugging) publishers:
         self._grasps_pub = rospy.Publisher('grasps', PoseArray, queue_size=1, latch=True)
         
-        # Create planning scene and robot commander:
+        # Create planning scene where we will add the objects etc.
         self._scene = PlanningSceneInterface()
+        # Create robot commander: interface to comand the manipulator programmatically (get the planning_frame for exemple
         self._robot = RobotCommander()
 
         rospy.sleep(1.0)
@@ -57,7 +58,7 @@ class PigeonPickAndPlace:
         self._scene.remove_world_object(self._grasp_object_name)
 
         # Add table and Coke can objects to the planning scene:
-        # Posso fazer um objeto com a TF do objeto detectado =D
+        # TODO get the position of the detected object
         self._pose_object_grasp = self._add_object_grasp(self._grasp_object_name)
 
         rospy.sleep(1.0)
