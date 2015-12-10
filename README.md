@@ -1,5 +1,6 @@
 # cyton_alpha_pick_place
 cyton_alpha package to grasp objects using MoveIt! and moveit_simple_grasps
+to gripper configuration see config/cyton_grasp_data.yaml (more information: https://github.com/davetcoleman/moveit_simple_grasps/tree/hydro-devel)
 
 ## Setup
 
@@ -11,7 +12,7 @@ Packages required:
   $ sudo apt-get install ros-hydro-moveit-core
 ```
 
-*cyton_alpha link
+*cyton_alpha
 ```
 cd ~/catkin_ws/src
 git clone https://github.com/LCAD-UFES/cyton_alpha.git
@@ -36,7 +37,7 @@ catkin_make -j4
 ```
 
 
-# Demo mode ##
+## Demo mode
 
 Run the following instead:
 
@@ -46,7 +47,7 @@ roslaunch rosbook_arm_pick_and_place grasp_generator_server.launch
 rosrun rosbook_arm_pick_and_place pick_and_place.py
 ```
 
-# Simulation mode ##
+## Simulation mode
 
 ```bash
 roslaunch cyton_alpha_gazebo cyton_empty_world.launch
