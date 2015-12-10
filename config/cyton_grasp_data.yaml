@@ -1,0 +1,21 @@
+base_link: link0
+#move group of end effector, not the end_effector_name
+gripper:
+  end_effector_name: gripper
+
+  # Default grasp params
+  joints: [claw_left, claw_right]
+#gripper open
+  pregrasp_posture:          [-0.02, 0.02]
+  pregrasp_time_from_start:  &time_from_start 4.0
+#I'm don't understend - the grasp should be depend of object size
+  grasp_posture:             [-0.02, 0.02]
+  grasp_time_from_start:     *time_from_start
+
+  postplace_time_from_start: *time_from_start
+
+  # Desired pose from end effector to grasp [x, y, z] + [R, P, Y]
+  grasp_pose_to_eef:          [0.025, 0.0, -0.018]
+  grasp_pose_to_eef_rotation: [0.0, 0.7, 0.0]
+  # 1.57 3.14151
+  end_effector_parent_link: grasping_frame
